@@ -1,0 +1,142 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* định dạng thanh menu */
+.menu {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(32, 32, 32);
+    overflow: auto;
+}
+.menu a {
+    background-color: rgb(32, 32, 32);
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color: rgb(5, 0, 37); /*màu nền khi di chuyển chuột đến */
+}
+.menu a.active {
+    background-color: blue; /* màu nền khi ấn chọn */
+    color: white;
+}
+
+.logo {
+    width: 80%; /*kích ocwx logo so với ảnh gốc */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị biến dạng */
+}
+
+/*phần đầu trang */
+.head {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 15%;
+    left: 15%; /*cách lề trái */
+    display: flex;
+    align-items: center;
+    position: fixed; /* Đặt phần tử ở vị trí cố định trên màn hình */
+    top: 0; /* Cố định phần tử ở đỉnh màn hình */
+    width: 85%; /* Chiều rộng của phần tử */
+    padding: 10px; /* Thêm padding để tạo khoảng trống xung quanh */
+    z-index: 1000; /* Đặt độ sâu (z-index) cao hơn để đảm bảo top-bar hiển thị trên tất cả các phần tử khác */
+  }
+  
+  /*nút đăng nhập */
+  .login-button {
+    padding: 10px 20px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: none;  /* bỏ viền*/
+    border-radius: 5px;  /* bo góc */
+    margin-right: 10px;
+    cursor: pointer;  /*biến con trỏ thành bàn tay khi di chuyển qua nút */
+    width: 3.5cm;
+  }
+
+  /*nút đăng kí */
+  .register-button {
+    padding: 10px 20px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: none;  /* bỏ viền*/
+    border-radius: 5px;  /* bo góc */
+    margin-right: 10px;
+    cursor: pointer;  /*biến con trỏ thành bàn tay khi di chuyển qua nút */
+    width: 3.5cm;
+  }
+
+  /* nút quay lại */
+  .back-button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0; /* Khoảng cách nút */
+    margin-left: 3cm;
+    cursor: pointer;
+    width: 0.2cm;
+  }
+  
+  /* nút tiến tới */
+  .forward-button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 0.5cm;
+  }
+  
+  
+  .search-bar {
+    padding-left: 0.5cm;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 4px;
+    width: 15cm;
+    border-radius: 25px;
+    border: 1px solid #dff7f7;
+    margin-right: 5px;
+    background-color: #d3e4e4;
+    height: 1cm;
+    color: black;
+  }
+  
+  .search-button {
+    padding: 8px 15px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-section {
+    display: flex;
+    align-items: center;
+  }
+  
+
+/*phần content */
+.content {
+  padding-top: 20%;
+  padding-left: 15%;
+  width: 85%;
+  height: 80%;
+  background-image: url('background_content.jpg');
+  background-size: cover; /* Đảm bảo ảnh sẽ được hiển thị với kích thước phù hợp */
+  background-repeat: no-repeat; /* Ngăn lặp lại ảnh nếu không đủ kích thước */
+}
